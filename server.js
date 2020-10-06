@@ -4,7 +4,8 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log('Containers rule!');
+    const myEnvVar = process.env.VARIABLE_NAME;
+    console.log('${myEnvVar} Containers rule!');
     await sleep(5000);
   }
 }
